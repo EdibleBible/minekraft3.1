@@ -1,12 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import TicketConverter from "./components/currencyConv.js"
+import Game from "./components/ticTacToe.js";
 import "./index.css"
-
-const CurrApp = (
-    <main>
-        <TicketConverter />
-    </main>
-)
-
-ReactDOM.render(CurrApp, document.getElementById('root'));
+  
+  ReactDOM.render(<Game />, document.getElementById("root"));
