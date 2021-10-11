@@ -13,16 +13,6 @@ class Game extends React.Component {
   }
 
   handleSquareClick(index) {
-    // const winStates = [
-    //   [0, 1, 2], 
-    //   [3, 4, 5],
-    //   [6, 7, 8],
-    //   [0, 3, 6],
-    //   [1, 4, 7],
-    //   [2, 5, 8],
-    //   [0, 4, 8],
-    //   [2, 4, 6]];
-    // const recordX = [];
     const stateSquares = this.state.squares;
     if (stateSquares[index] !== mark || this.state.gameWon) {
       return;
@@ -35,11 +25,6 @@ class Game extends React.Component {
     }
     const nextSymbol = this.state.nextSymbol === markX ? markO : markX;
     this.setState ({squares: stateSquares, nextSymbol: nextSymbol });
-    // console.log(index);
-    // recordX.push(index);
-    // console.log(recordX)
-    // for (let i = 0; i < winStates.length; i++) {
-    // };
   };
 
   checkWin(grid) {
