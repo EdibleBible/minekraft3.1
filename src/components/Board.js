@@ -15,7 +15,7 @@ class Board extends React.Component {
           onClick={arrowFunction}
           value={arrayElement}
         />
-        {(index + 1) % 3 === 0 ? <br/> : <></>}
+        {(index + 1) % 3 === 0 ? <br/> : ""}
         </div>
       });
     }
