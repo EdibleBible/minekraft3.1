@@ -1,6 +1,5 @@
-.div4 {
-    width: 50%;
-    margin: auto;
-    border: 3px solid #73AD21;
-  }
-@import url('~simpledotcss/simple.min.css');
+.square {
+  width: fit-content;
+  display: inline;
+}
+ @import url('~simpledotcss/simple.min.css');
